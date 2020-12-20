@@ -241,6 +241,7 @@ function findPath(index) {
                 table.rows[row + 1].cells[col].classList.remove("empty");
                 table.rows[row + 1].cells[col].classList.add("emptyPass");
                 // table.rows[row + 1].cells[col].innerHTML = weights[index + 10];
+                
                 queue.push(index + 10);
             }
         }
