@@ -135,6 +135,11 @@ table.onclick = function(e) {
 }   
 
 start.onclick = function() {
+    if (!beginCount || !exitCount) {
+        alert("Please, select Begin or Exit before clicking Start");
+        return;
+        //jstComment
+    }
     for (let i = 0; i < table.rows.length; i++) {
         for (let j = 0; j < table.rows[0].cells.length; j++) {
             if (table.rows[i].cells[j].classList.contains("begin")) {
