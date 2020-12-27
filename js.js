@@ -1,3 +1,4 @@
+'use strict';
 let table = document.querySelector(".field");
 let beginBtn = document.querySelector(".beginBtn");
 let isBeginBtn = false;
@@ -138,7 +139,6 @@ start.onclick = function() {
     if (!beginCount || !exitCount) {
         alert("Please, select Begin or Exit before clicking Start");
         return;
-        //jstComment
     }
     for (let i = 0; i < table.rows.length; i++) {
         for (let j = 0; j < table.rows[0].cells.length; j++) {
